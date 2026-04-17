@@ -160,7 +160,7 @@ body {
 
 /* Main content */
 .main-content {
-    padding: 100px 170px;
+    padding: 100px 140px;
     margin-top: -100px;
 }
 
@@ -180,7 +180,7 @@ body {
     width: 65%;
     padding: 10px 10px;
     font-style: italic;
-    font-size: 15px;
+    font-size: 0.9375rem;
     background-color: #eeeeee;
     border: none;
     color: rgba(0, 0, 0, 0.7);
@@ -306,6 +306,7 @@ body {
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    z-index: 9999;
     left: 0;
     top: 100%;
     color: black;
@@ -321,6 +322,7 @@ body {
     padding: 0 15px;
     line-height: 45px;
     display: block;
+    background-color: white;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
@@ -352,6 +354,7 @@ body {
 
 .single-product .product-img {
     height: 250px;
+    width: 100%;
     overflow: hidden;
 }
 .single-product .product-img img {
@@ -467,6 +470,9 @@ body {
 }
 .footer-main a {
     align-self: flex-start;
+}
+.footer-main a img {
+    width: 100%;
 }
 .footer-main span {
     color: rgba(255, 255, 255, 0.6);

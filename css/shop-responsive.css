@@ -1,0 +1,228 @@
+.hamburger {
+    display: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {
+    .header {
+        gap: 30px;
+    }
+
+    .nav-bar {
+        gap: 15px;
+    }
+
+    .main-content {
+        padding: 50px 50px;
+    }
+
+    .product-container {
+        gap: 15px;
+    }
+
+    .single-product .product-img {
+        height: 180px;
+    }
+
+    .side-bar {
+        padding: 0 10px;
+    }
+
+    .footer-wrapper {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .footer-main ul {
+        gap: 20px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content {
+        padding: 50px 20px;
+    }
+
+    .shop-product {
+        padding: 0 40px;
+    }
+
+    .popular-product .product-info a {
+        font-size: 0.9rem;
+    }
+
+    .shop-category ul li a {
+        font-size: 0.9rem;
+    }
+
+    .shop-category h2 {
+        font-size: 1.3rem;
+    }
+
+    .single-product :is(.product-name, .product-price) {
+        font-size: 1rem;
+    }
+
+    .single-product .product-name {
+        margin-top: 20px;
+    }
+
+    .single-product .product-button {
+        font-size: 0.8rem;
+    }
+
+    .pagination ul li a {
+        font-size: 1.1rem;
+    }
+
+    .search-product input {
+        font-size: 0.8rem;
+    }
+
+    .filter-container span {
+        font-size: 1rem;
+    }
+
+    .footer-wrapper {
+        padding: 40px 0 80px 0;
+        gap: 20px;
+    }
+
+    .footer-list .list-title {
+        font-size: 1rem;
+    }
+
+    .footer-list ul li a {
+        font-size: 0.9rem;
+    }
+
+    .footer-main ul {
+        gap: 10px;
+    }
+
+    .nav-bar li a {
+        font-size: 0.8rem;
+    }
+
+    .header {
+        gap: 15px;
+    }
+
+    .header a img {
+        width: 140px;
+    }
+
+    .icons {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .popular-product .product-info {
+        gap: 5px;
+    }
+
+    .content-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .side-bar {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .shop-category {
+        margin-top: 30px;
+    }
+
+    .popular-product {
+        margin-top: 30px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    .footer-wrapper > div {
+        width: 100% !important;
+    }
+    .footer-main ul {
+        width: 60%;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+        padding: 40px 10px 0;
+    }
+
+    .icons {
+        font-size: 1rem;
+        gap: 30px;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 130%;
+    }
+    .hamburger i {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .checkbox-input:checked ~ .nav-bar {
+        padding: 0;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 150%;
+        background-color: black;
+        width: 80vw;
+        font-size: 1.3em;
+        font-weight: normal;
+        letter-spacing: 1px;
+        gap: 0;
+    }
+
+    .checkbox-input:checked ~ .nav-bar li {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    .checkbox-input:checked ~ .nav-bar li:not(:last-child) {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .shop-product {
+        padding: 0 20px;
+    }
+    .filter {
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .filter-container {
+        gap: 20px;
+    }
+
+    .filter-container span {
+        font-size: 0.9rem;
+    }
+}
