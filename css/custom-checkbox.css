@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #009688;
+}
+
+body {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Checkbox */
+.checkbox-label input:checked ~ .custom-checkbox {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.checkbox-label input:checked ~ .custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    border: solid white;
+    border-width: 3px 3px 0 0;
+    display: block;
+    width: 14px;
+    height: 6px;
+    transform: rotate(129deg);
+}
+
+.custom-checkbox {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #696969;
+    border-radius: 3px;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Radio */
+.radio-label input:checked ~ .custom-radio {
+    border-color: var(--primary-color);
+}
+.radio-label input:checked ~ .custom-radio::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.custom-radio {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #696969;
+    border-radius: 50%;
+    transition: border-color 0.3s ease;
+}
+
+/* Switch */
+.switch-label input:checked ~ .custom-switch {
+    background-color: hsl(174.81deg 38.39% 58.63%);
+}
+.switch-label input:checked ~ .custom-switch::after {
+    background-color: var(--primary-color);
+    transform: translate(25px, -50%);
+}
+
+.custom-switch {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    background-color: #939393;
+    border-radius: 20px;
+}
+.custom-switch::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    transition: transform 0.3s ease;
+    transform: translate(-2px, -50%);
+    box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 6px -1px rgba(0, 0, 0, 0.75);
+}
